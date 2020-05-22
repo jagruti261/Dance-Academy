@@ -1,0 +1,51 @@
+//- index.pug
+doctype html
+html
+  head
+    title
+      |Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul  
+            div#logo
+              img(src="../static/logo.png ")
+              
+            li #[a(href="/") Home ] 
+            li #[a(href="/") About]
+            li #[a(href="/") services]
+            li #[a(href="/") Class-info]
+            li #[a(href="/") contact]  
+
+    section#introsection 
+        div.head Welcome To Dance Academy         
+        div.small A Moments of Getting Vibe.
+      
+        div.mission
+          h2 Our Mission
+          div#beginner.card
+            h3 Beginner
+          div#intermedite.card
+            h3 Intermedite
+          div#expert.card
+            h3 Experts
+    section#sponsorsection    
+        h2 Our Sponsore
+        div#sponser
+          img(src="../static/logo1.png", Class="spimg")
+          img(src="../static/logo2.png", Class="spimg")
+          img(src="../static/logo3.png", Class="spimg")
+          img(src="../static/logo4.png", Class="spimg")
+
+    footer#footer
+        img(src="../static/logo.png ")
+        |Thank You For Visite
+        div
+          hr
+        div.copy
+        | © Copyright 2020 - Dance Academy 
+
+  
+    script
+        include ../static/index.js
